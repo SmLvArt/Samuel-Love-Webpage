@@ -117,10 +117,10 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="flex justify-center space-x-2 mt-2 z-10">
+                    <div class="relative flex justify-center space-x-2 mt-8 z-20">
                         {#each Array(totalImages) as _, index}
                             <button 
-                                class="w-2 h-2 rounded-full transition-colors"
+                                class="w-2 h-2 rounded-full transition-colors z-25"
                                 class:bg-white={index === currentImageIndex}
                                 class:bg-stone-500={index !== currentImageIndex}
                                 onclick={() => goToImage(index)}
