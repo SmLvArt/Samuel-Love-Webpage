@@ -4,6 +4,8 @@
 	
 	let { children } = $props();
 </script>
-
+<main class="page-layout">
 <Header />
+
 {@render children()}
+</main>
